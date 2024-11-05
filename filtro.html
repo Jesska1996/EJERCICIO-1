@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="filtro.css">
+  <title>Filtros en JS</title>
+</head>
+
+<body>
+
+  <header> <!--Para hacerlo semántico usaré header-->
+    <h1>Lista de productos </h1>
+  </header>
+  <main>  <!--Agregue está sección para separarlos-->
+    <section class="filtro-busqueda">
+    <label for="busqueda">Buscar productos por color o tipo:</label> <!--Agregue label para hacer la búsqueda más sencilla-->
+      <input type="text" id="busqueda" placeholder="Seleccioná un color o tipo"><!--Agregue id para conectarlo al css y js-->
+      <button id="btn-filtrar">Filtrar</button><!--Agregue id para conectarlo al css y js-->
+    </section>
+
+    <section id="lista-de-productos"> <!--Agregue sección para mostrar lista de productos, elimine el div-->
+    </section>
+     <!-- Contenedor para señalar que no hubo resultados -->
+     <section id="sin-resultados" style="display: none;">
+      <p>No se encontraron productos con ese criterio de búsqueda.</p>
+    </section>
+  </main>
+  <script src="filtro.js"></script>
+</body>
+
+</html>
